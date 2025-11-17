@@ -16,7 +16,7 @@ DB_CONFIG = {
 }
 
 # Conectar a MariaDB
-conn = mysql.connector.connect(DB_CONFIG)
+conn = mysql.connector.connect(**DB_CONFIG)
 
 cursor = conn.cursor()
 
