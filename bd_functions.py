@@ -25,7 +25,7 @@ DB_CONFIG = {
     'user': os.getenv('DB_USER'),
     'password': os.getenv('DB_PASSW'),
     'database': os.getenv('DB_NAME'),
-    'port': os.getenv('DB_PORT')
+    'port': int(os.getenv('DB_PORT'))
 }
 
 ANIO_INICIO = 2018
