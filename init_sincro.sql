@@ -1,4 +1,4 @@
-CREATE DATABASE sincro;
+CREATE DATABASE IF NOT EXISTS sincro;
 
 USE sincro;
 
