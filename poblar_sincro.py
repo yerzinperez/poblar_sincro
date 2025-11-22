@@ -73,8 +73,8 @@ def poblar_evaluaciones_historicas_con_blockchain(cursor, connection, usuarios_i
             concepto = random.choice(CONCEPTOS)
             fecha_vencimiento = fecha_cert + timedelta(days=365 * random.choice([1, 2, 3, 5]))
             # Generar datos del PDF
-            nombre_pdf = f"Informe_{numero_reconocimiento}_{id_usuario}.pdf"
-            ruta_pdf = f"/documentos/evaluaciones/{fecha_eval.year}/{fecha_eval.month:02d}/{nombre_pdf}"
+            nombre_pdf = random.choice(FILES_NAME)
+            ruta_pdf = f"https://files-crc.erzoft.com/d/23f1b164e31648259652/files/?p=%2F{nombre_pdf}"
             hash_pdf = generar_hash_archivo(f"{numero_reconocimiento}{id_usuario}")
 
             # Insertar evaluación

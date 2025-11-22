@@ -120,6 +120,12 @@ RESTRICCIONES_CODIGOS = [
     ('20', 'Solo conducir de día')
 ]
 
+FILES_NAME = [
+    '1.pdf',
+    '2.pdf',
+    '3.pdf'
+]
+
 
 # =============================================
 # FUNCIONES DE CONEXIÓN
